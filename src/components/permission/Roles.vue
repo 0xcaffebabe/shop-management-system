@@ -97,7 +97,6 @@ export default {
         return this.$message.error(res.meta.msg)
       }
       this.roleList = res.data
-      console.log(this.roleList)
     },
     async removePermission (role, permission) {
       const ret = await this.$confirm(`此操作将永久删除权限"${permission.authName}",是否继续`, '提示', {
