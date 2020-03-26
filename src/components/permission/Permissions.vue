@@ -39,7 +39,6 @@ export default {
         return this.$message.error(res.meta.msg)
       }
       this.permissionList = res.data
-      console.log(this.permissionList)
     }
   }
 }
